@@ -13,6 +13,15 @@
             let myAge = 21;
             const mySize = '600"';
             const myColours =  ["red", "blue", 255255255 ];
+
+            for(i = 0; i < myColours.length; i++) {
+                console.log(myColours[i]);
+            }
+
+            for (s of myColours) {
+                console.log(s);
+            }
+
             console.log(myName, myAge);
 
             if(myName !== "matt's book") {
@@ -60,8 +69,22 @@
             customer.age = 22;
             console.log(customer);
                         
-            const customer2 = {customer,  surname:"Thornfield"};
+            const customer2 = {...customer, age:33,  surname:"Thornfield"};
             console.log(customer2);
+
+
+            function printHello(name) {
+                console.log(`I'm printing hello to ${name} `);
+            }
+
+            const printHello2 = (name) => {
+                return `I'm printing hello to ${name} `;
+            }
+
+            const printHello3 = name => `I'm printing hello to ${name} `;
+            
+
+
         </script>
 
 
@@ -69,6 +92,9 @@
     <body>
             <h1>Terms and conditions</h1>
             <p>These are the ts and cs</p>
+
+            <button onclick="printHello('Matt');">click me</button>
+            <button onclick="printHello2('Simon');">click me</button>
 
             <table>
                 <thead>
