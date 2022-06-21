@@ -15,7 +15,7 @@
             const myColours =  ["red", "blue", 255255255 ];
             console.log(myName, myAge);
 
-            if(myName === "matt's book") {
+            if(myName !== "matt's book") {
                 console.log("they match");
             }
             else {
@@ -25,6 +25,8 @@
             let yourAge = "21";
             console.log(myAge === +yourAge);
 
+            let myAddress;
+            console.log(myAddress != null);
 
             //this is a comment
 
@@ -32,6 +34,34 @@
             this is a multi
             line comment
             */
+
+            let x = 6;
+            let y = 15;
+            x = x + y;
+            y = y / 4;
+
+            //x = 21
+            let z = x++;
+            console.log(x,z);
+            if (x === 6 || y < 15) {
+
+            }
+
+            const sentence = `My name is ${myName}` ;
+            const sentence2 = "My name is " + myName;
+            console.log(sentence);
+
+            const customer = {name : "Matt", 
+                                age: 21,
+                                children: ["Simon", "Denise"],
+                                preferences: {favouriteColour: "Blue"}
+                            };
+
+            customer.age = 22;
+            console.log(customer);
+                        
+            const customer2 = {customer,  surname:"Thornfield"};
+            console.log(customer2);
         </script>
 
 
