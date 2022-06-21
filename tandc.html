@@ -96,7 +96,25 @@
             <button onclick="printHello('Matt');">click me</button>
             <button onclick="printHello2('Simon');">click me</button>
 
-            <table>
+            <script>
+                const toggleVisibility = () => {
+                    const arrow = document.getElementById("arrow-symbol");
+                    const table =  document.getElementById("myTable");
+                    if (table.style.display === "block") {
+                        table.style.display = "none";
+                          arrow.textContent =">";
+                    }
+                    else {
+                        table.style.display = "block";
+                        arrow.textContent ="^";
+                    } 
+                }
+            </script>
+
+
+            <h2 class = "tableHeading" onclick="toggleVisibility();"><span id="arrow-symbol" >&gt;</span>table</h2>
+
+            <table id="myTable" style="display:none;" >
                 <thead>
                     <tr><th>Membership type</th><th>price</th></tr>
                 </thead>

@@ -35,7 +35,13 @@ input, select {
     display: block;
 }
 
-table, td, th {
-    border: 1px solid #000;
+td, th {
+    border: 1px solid #000;    
+}
+table {
     border-collapse: collapse;
+}
+
+h2 {
+    cursor: pointer;
 }
