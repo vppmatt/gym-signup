@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gym sign up</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+        rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sign up</h1>
+            <form action="somepage.html" method="get"  >
+                <!-- this should be post! -->
+                <label for="title">Title *</label>
+                <select id="title" name="title" required>
+                    <option value="" disabled selected>-- select --</option>
+                    <option value="mr">Mr</option>
+                    <option value="ms">Ms</option>
+                    <option value="mx">Mx</option>
+                </select>
+                
+                
+                <label for="firstName" >First name *</label>
+                <input type="text" name="firstName" id="firstName" required>
+                
+                
+                <label for="surname" >Surname *</label>
+                <input type="text" name="surname" id="surname" required>
+
+                <label for="dob">Date of birth</label>
+                <input type="date" id="dob" name="dob">
+                
+                <label>Membership level *</label>
+
+                <div class="radio-container">
+
+                <input type="radio" id="full" value="full">
+                <label class="radio-label">Full access</label>
+                
+                <input type="radio" id="op" value="op">
+                <label class="radio-label">Off peak</label>
+                
+                <input type="radio" id="allg" value="allg"> 
+                <label class="radio-label">All gyms</label>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </body>
+</html>
