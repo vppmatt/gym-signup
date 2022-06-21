@@ -36,16 +36,21 @@
 
                 <div class="radio-container">
 
-                <input type="radio" id="full" value="full">
-                <label class="radio-label">Full access</label>
+                <input type="radio" id="full" value="full" name="membership">
+                <label class="radio-label" for="full" >Full access</label>
                 
-                <input type="radio" id="op" value="op">
-                <label class="radio-label">Off peak</label>
+                <input type="radio" id="op" value="op" name="membership">
+                <label class="radio-label" for="op">Off peak</label>
                 
-                <input type="radio" id="allg" value="allg"> 
-                <label class="radio-label">All gyms</label>
+                <input type="radio" id="allg" value="allg" name="membership"> 
+                <label class="radio-label" for="allg">All gyms</label>
                 </div>
-                
+
+                <label for="acceptedTandC">I accept the terms and conditions</label>
+                <input type="checkbox" name="acceptedTandC" value="yes"
+                 id="acceptedTandC">
+
+
                 <button type="submit">Submit</button>
             </form>
             
