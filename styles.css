@@ -42,6 +42,6 @@ table {
     border-collapse: collapse;
 }
 
-h2 {
+.tableHeading {
     cursor: pointer;
 }
